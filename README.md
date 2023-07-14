@@ -1,5 +1,9 @@
 # SQL Server + JPA + Spring Boot Demo
 
+* Maven 3
+* Spring Boot 3
+* MS SQL Server 2022
+
 ## Build
 
 ```sh
@@ -18,4 +22,11 @@ mvn clean install
 
 ```sh
 mvn spring-boot:run
+```
+
+## Testing
+
+```sh
+curl -X POST localhost:8080/users -d "name=John Doe"
+{"message":"User(id=56, name=John Doe)"}
 ```
